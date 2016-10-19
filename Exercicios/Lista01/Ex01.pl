@@ -6,19 +6,19 @@ homem(ze).
 
 %Mulher
 mulher(maria).
-mulher(Aoana).
+mulher(joana).
 
 %Idade
 idade(ze,30).
 idade(maria,40).
 idade(marcos,20).
 idade(pedro,25).
-idade(Aoana,28).
+idade(joana,28).
 
 %Gosta
 gosta(ze,aventura).
 gosta(maria,comedia).
-gosta(Aoana,romance).
+gosta(joana,romance).
 gosta(marcos,terror).
 gosta(marcos,romance).
 gosta(pedro,romance).
