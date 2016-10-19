@@ -1,0 +1,11 @@
+//A
+capital(X),pertence(X,rs).
+
+//B
+estado(X,nordeste).
+
+//C
+cidade(X,pequena);cidade(X,media).
+
+//D
+estado(X,sudeste),pertence(Y,X).
