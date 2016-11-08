@@ -1,7 +1,9 @@
 %07
-potencia(_,0,1).
-potencia(B,N,P):-
-    N>0,
-    M is N-1,
-    potencia(B,M,R),
-    P is B*R.
+fib(0,0).
+fib(1,1).
+fib(N,F):- N>1,
+	N1 is N-1,
+	fib(N1,F1),
+	N2 is N-2,
+	fib(N2,F2),
+	F is F1+F2.

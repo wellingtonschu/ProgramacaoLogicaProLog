@@ -1,4 +1,4 @@
 %04
-entre(N1,N2):-
-    forall(between(N1,N2,X),
-    (Num is X,write(Num),nl)).
+cubo(X):-
+    forall(between(1,X,Y),
+    (Cub is Y*Y*Y,write(Cub),nl)).
