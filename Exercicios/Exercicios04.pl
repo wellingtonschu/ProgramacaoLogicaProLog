@@ -13,20 +13,25 @@ familia(pessoa(zevelho,difer,data(25,03,23),trab(aposentado,32000)),
 
 %01
 %a
-pai(X) :- familia(X,_,_).
+pai(X) :-
+	familia(X,_,_).
 
 %b
-mae(X) :- familia(_,X,_).
+mae(X) :-
+	familia(_,X,_).
 
 %c
-filho(X) :- familia(_,_,Filhos),
-	   membro(X,Filhos).
+filho(X) :-
+	familia(_,_,Filhos),
+	membro(X,Filhos).
 
 membro(X,[X|_]).
-membro(X,[_|Y]) :- membro(X,Y).
+membro(X,[_|Y]) :-
+	membro(X,Y).
 
 %d
-existe(X) :- pai(X);mae(X);filho(X).
+existe(X) :-
+	pai(X);mae(X);filho(X).
 
 %e
 nasceu(pessoa(_,_,Data,_),Data).
